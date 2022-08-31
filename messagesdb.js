@@ -1,0 +1,2 @@
+const allmessagearray = [];
+export { allmessagearray };

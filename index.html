@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="chat-head">
+        <div class="userheaderinfo">
+          <div>
+            <span>logo</span>
+          </div>
+          <div class="userheadinfoinnerdiv">
+            <span>recever name</span>
+            <span>last seen</span>
+          </div>
+        </div>
+
+        <div class="rightaligntext">
+          <span id="getConnectionid">connectionID:</span>
+          <span id="connectionStatus">disconnected</span>
+        </div>
+      </div>
+
+      <div class="chatbodycontainer" id="recivedchatbox">
+        <!-- consditionally add if add or removed msg -->
+      </div>
+      <div class="chatboxContainer">
+        <div class="realtimemonitoring">
+          <span> person is writing</span>
+        </div>
+        <div class="messageinnercontainer">
+          <input
+            type="text"
+            placeholder="type message here"
+            id="messangingbarid"
+          />
+
+          <button id="sendmessage">send</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <template id="recivedmessagetemplate">
+    <div class="sent">
+      <div class="logoforsent">
+        <span>logo</span>
+      </div>
+      <div class="messageinner">
+        <span class="messageContent">{message}</span>
+        <div>
+          <span class="timeofmsg">time of msg par name of person</span>
+          <span class="nameofperson">time of msg par name of person</span>
+        </div>
+      </div>
+    </div>
+  </template>
+  <template id="sentmessagetemplate">
+    <div class="recived">
+      <div class="messageinner">
+        <span class="messageContent">{contentofmsg}</span>
+        <div>
+          <span class="timeofmsg">time of msg</span>
+          <span class="nameofperson">time of msg par name of person</span>
+        </div>
+      </div>
+      <div class="logoforsent">
+        <span>logo</span>
+      </div>
+    </div>
+  </template>
+  <script src="main.js" type="module"></script>
+</html>

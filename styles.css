@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  padding: 0rem 1rem;
+  margin: auto;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  border: 1px solid orange;
+  overflow: hidden;
+}
+.chat-head {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.chat-head .userheaderinfo {
+  display: flex;
+  align-items: center;
+}
+.chat-head .userheaderinfo .userheadinfoinnerdiv {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+.chat-head .rightaligntext {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+
+.chatbodycontainer {
+  margin-top: 1.5rem;
+  height: 75vh;
+  overflow: scroll;
+  width: 100%;
+  overflow-x: hidden;
+}
+.chatbodycontainer::-webkit-scrollbar {
+  display: none;
+}
+.messageinnercontainer {
+  display: flex;
+}
+.sent {
+  padding: 0.5rem 0rem;
+  border: 1px solid blue;
+  margin-top: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  align-items: center;
+}
+.sent .messageinner {
+  display: flex;
+  flex-direction: column;
+}
+.recived {
+  padding: 0.5rem 0rem;
+  margin-top: 0.5rem;
+  border: 1px solid gray;
+  display: grid;
+  grid-template-columns: 10fr 1fr;
+  align-items: center;
+}
+.recived .messageinner {
+  display: flex;
+  flex-direction: column;
+
+  text-align: right;
+}
+.logoforsent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.5rem;
+}
+
+.chatboxContainer {
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  bottom: 0;
+  left: 0;
+  background-color: lightgray;
+}
+.realtimemonitoring {
+  margin: 1rem 0;
+}
+.chatboxContainer input {
+  width: 80%;
+  padding: 1rem 0.5rem;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: transparent;
+}
+.chatboxContainer button {
+  width: 20%;
+  padding: 1rem;
+  background-color: lightgray;
+  border: 1px black solid;
+  border-left: transparent;
+}
